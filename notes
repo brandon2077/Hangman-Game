@@ -1,0 +1,108 @@
+"If something is true, let's do option 1, or else, if it is false, let's do option 2.
+if/else Statements
+
+let needsCoffee = true;
+if (needsCoffee === true) {
+    console.log('Finding coffee');
+} else {
+    console.log('Keep on keeping on!');
+}
+
+ELSE IF STATEMENTS:
+
+else if provides conditions to else
+
+let stopLight = 'green';
+
+if (stopLight === 'red') {
+  console.log('Stop');
+} else if (stopLight === 'yellow') {
+  console.log('Slow down');
+} else if (stopLight === 'green') {
+  console.log('Go!');
+} else {
+  console.log('Caution, unknown!');
+}
+
+
+Linux distros hangman
+
+Fist word: Arch
+
+If user types [A,R,C,H] then return under 'Current Word'
+Else return to 'Letters Guess'
+Else -1 from Guesses remaining
+
+If user types 'Arch'
+change image + title + load new game
+
+var guessCount = 12;
+
+var function = (wrongGuess) => {
+  guessCount--;
+}
+
+
+UPDATE ELEMENTS:
+
+let seasons = ["Winter", "Spring", "Summer", "Fall"];
+
+seasons[3] = "Autumn";
+console.log(seasons)
+//Output:
+//Winter
+//Spring
+//Summer
+//Autumn
+
+currentWord = [____]
+if ...
+update element[index#]
+
+let meal = 'none';
+let time = 12;
+// We'll use military time for this example, counting hours 0-23.
+
+const restaurantSpecials = {
+ breakfast: 'The breakfast special is 20% off freshly squeezed orange juice',
+ lunch: 'The lunch special is 10% off appetizers',
+ none: 'There are no specials currently'
+};
+
+if (time < 11) { // 11 am
+  meal = 'breakfast';
+} else if (time < 17) { // 5 pm
+  meal = 'lunch';
+}
+
+console.log(restaurantSpecials[meal]);
+
+
+PICTURE/TITLE
+
+USE KEY EVENTS TO LISTEN FOR THE LETTERS THAT PLAYERS WILL TYPE
+
+DISPLAY THE FOLLOWING:
+
+PRESS ANY KEY TO GET STARTED
+
+WINS
+
+CURRENT WORD
+_ _ _ _ 
+
+NUMBER OF GUESSES REMAINING
+  Count downs number of guesses as a number
+
+LETTERS ALREA	DY GUESSED
+  Returns wrong letters guessed in an array
+
+  Correct guesses are returned to CURRENT WORD
+
+  Repeated guesses should not do anything
+
+UPON WINNING
+  Win + 1
+  Title text updates
+  Picture updates
+  Game starts over with a new word
